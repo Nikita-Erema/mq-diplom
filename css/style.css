@@ -229,7 +229,7 @@ li {
     width: 50px;
     height: 50px;
     background-color: #b59f5b;
-    background-image: url(svg/search.svg);
+    background-image: url(/svg/search.svg);
     background-size: 25px 25px;
     background-position: center center;
     background-repeat: no-repeat;
