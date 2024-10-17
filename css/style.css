@@ -27,28 +27,24 @@ body {
 
 .header {
     width: 100%;
-    height: 450px;
     background-color: #000000; 
     position: relative;
     z-index: 1;
 }
 
-.image {
-    width: 100%;
-    height: 100%;
-    background-image: url(images/banner-bg.jpg);
-    background-size: cover;
-    opacity: 0.6;
-    position: absolute;
-    z-index: -1;
-}
-
 .container {
     display: flex;
     flex-direction: row;
-    gap: 530px;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    position: absolute;
+    object-fit: cover;
 }
 
 .navigation {
@@ -88,17 +84,23 @@ body {
     font-weight: 700;
 }
 
-.underline {
+.main_title::after {
+    content:"";
+    display: block;
     width: 66px;
     height: 3px;
     background-color: #b59f5b;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
 }
 
 .trend_container {
@@ -110,40 +112,15 @@ a {
 }
 
 .trend {
-    background-color: #000000;
-    height: 330px;
+    min-height: 330px;
     width: 25%;
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column-reverse;
-}
-
-.trend_img {
-    height: 330px;
-    width: 100%;
-    position: absolute;
-    opacity: 0.6;
-    z-index: -1;
-    bottom: 0;
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.trend_one {
-    background-image: url(images/trend1.jpg);
-}
-
-.trend_two {
-    background-image: url(images/trend2.jpg);
-}
-
-.trend_tree {
-    background-image: url(images/trend3.jpg);
-}
-
-.trend_four {
-    background-image: url(images/trend4.jpg);
 }
 
 .trend_text {
@@ -192,14 +169,14 @@ a {
     font-weight: 700;
 }
 
-#date_news {
+.date_news {
     font-size: 12px;
     color: #888888;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
 }
 
-#autor_news {
+.autor_news {
     margin-left: 20px;
     font-size: 12px;
     line-height: 40px;
@@ -208,7 +185,7 @@ a {
     font-family: "Open Sans", sans-serif;
 }
 
-#maintext_news {
+.maintext_news {
     display: block;
     height: 62px;
     font-size: 15px;
@@ -224,8 +201,6 @@ a {
 
 .mini_news {
     display: flex;
-    height: 80px;
-    width: 280px;
     margin-bottom: 30px;
 }
 
@@ -241,7 +216,7 @@ a {
     margin-top: 0px;
 }
 
-#search {
+.search {
     height: 50px;
     width: 230px;
     background-color: #f4f7f6;
@@ -251,12 +226,17 @@ a {
 }
 
 .search_icon {
-    height: 50px;
     width: 50px;
+    height: 50px;
     background-color: #b59f5b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(../svg/search.svg);
+    background-size: 25px 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
 }
 
 .search_container {
@@ -264,11 +244,7 @@ a {
     cursor: pointer;
 }
 
-#search_svg {
-    width: 25px;
-}
-
-#email {
+.email {
     height: 50px;
     width: 280px;
     background-color: #f4f7f6;
@@ -320,7 +296,6 @@ a {
 
 .tems_style {
     font-size: 14px;
-    line-height: 47px;
     color: #000000;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
@@ -333,6 +308,7 @@ a {
 .tems {
     border-bottom: 1px solid #eeeeee;
     position: relative;
+    line-height: 47px;
 }
 
 .number_tems {
@@ -353,12 +329,16 @@ a {
 .create {
     height: 455px;
     width: 320px;
-    border: #b59f5b solid 4px;
     display: flex;
     flex-direction: column;
     padding-left: 30px;
     padding-right: 30px;
-    box-sizing: border-box;
+}
+
+.create_text {
+    border: #b59f5b solid 4px;
+    margin: -35px;
+    padding: 35px;
 }
 
 .link_shop {
@@ -385,7 +365,7 @@ a {
     cursor: pointer;
 }
 
-#create_cost {
+.create_cost {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -405,7 +385,6 @@ a {
 
 .footer {
     width: 1200px;
-    height: 100px;
     background-color: #f4f7f6;
     margin-top: 72px;
     margin-left: auto;
