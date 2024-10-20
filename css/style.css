@@ -15,9 +15,119 @@
     font-style: normal;
     font-weight: 400;
 }
+/* Начало кода Фитбека */
+.fitback {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
 
+.case {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+.X {
+    position: absolute;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(/svg/form-x.svg);
+    background-color: rgba(0,0,0,0);
+    width: 15px;
+    height: 15px;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.question_fitback {
+    width: 336px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #f3f7f6;
+    background-image: url(/svg/form-arrows.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 15px;
+    background-position:center right 5px;
+}
+
+.text_fitback {
+    min-width: 336px;
+    min-height: 150px;
+    max-width: 336px;
+    max-height: 150px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f3f7f6;
+    margin-bottom: 40px;
+}
+
+.button_fitback {
+    height: 70px;
+    width: 340px;
+    background-color: #b59f5b;
+    outline: none;
+    border: none;
+    appearance: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio {
+    width: 15px;
+    height: 15px;
+    background-image: url(/svg/form-empty-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.form_radio {
+    display: flex;
+    gap: 10px;
+}
+
+#first:checked ~ .radio {
+    background-image: url(/svg/form-circle.svg);
+}
+
+#second:checked ~ .radio {
+    background-image: url(/svg/form-circle.svg);
+}
+
+.text_in_fitback {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+/* Начало основного кода */
 body {
     margin: 0;
+    position: relative;
 }
 
 .text {
