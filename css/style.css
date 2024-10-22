@@ -140,21 +140,33 @@ body {
     background-color: #000000; 
     position: relative;
     z-index: 1;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header::after {
+    content: "";
+    background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.6;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.image {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.6;
-    position: absolute;
-    object-fit: cover;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    padding-top: 50px;
 }
 
 .navigation {
@@ -169,9 +181,12 @@ body {
     text-align: center;
 }
 
+.list_item_nav {
+    color: #ffffff;
+}
+
 .noemi_logo {
     width: 100px;
-    height: 36px;
 }
 
 .title {
@@ -189,7 +204,6 @@ body {
 .main_title_container {
     text-align: center;
     font-size: 20px;
-    line-height: 29px;
     color: #0f0d0e;
     font-weight: 700;
 }
@@ -211,6 +225,12 @@ a {
 
 li {
     list-style-type: none;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 .trend_container {
@@ -233,16 +253,78 @@ li {
     background-size: cover;
 }
 
+.trend_one::after {
+    content: "";
+    z-index: -1;
+    opacity: 0.6;
+    position: absolute;
+    background-image: url(../images/trend1.jpg);
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.trend_two::after {
+    content: "";
+    z-index: -1;
+    opacity: 0.6;
+    position: absolute;
+    background-image: url(../images/trend2.jpg);
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.trend_three::after {
+    content: "";
+    z-index: -1;
+    opacity: 0.6;
+    position: absolute;
+    background-image: url(../images/trend3.jpg);
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.trend_four::after {
+    content: "";
+    z-index: -1;
+    opacity: 0.6;
+    position: absolute;
+    background-image: url(../images/trend4.jpg);
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 .trend_text {
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;
     font-weight: 700;
-    border: #b59f5b solid 3px;
+}
+
+.trend_tegs_text {
     margin: 26px;
     padding: 35px;
     display: flex;
     flex-direction: column;
+    border: #b59f5b solid 3px;
+}
+
+.tegs_news {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 25px;
 }
 
 .tegs {
@@ -250,19 +332,21 @@ li {
     line-height: 40px;
     color: #b59f5b;
     font-weight: 700;
-    word-spacing: 25px;
 }
 
 .main {
     display: flex;
     flex-direction: row;
-    gap: 120px;
     justify-content: center;
     margin-top: 82px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main_news {
-    height: 316px;
     width: 800px;
     display: flex;
     gap: 35px;
@@ -297,7 +381,6 @@ li {
 
 .maintext_news {
     display: block;
-    height: 62px;
     font-size: 15px;
     line-height: 22px;
     color: #0f0d0e;
@@ -323,7 +406,8 @@ li {
     line-height: 18px;
     color: #000000;
     font-weight: 700;
-    margin-top: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .search {
@@ -339,7 +423,7 @@ li {
     width: 50px;
     height: 50px;
     background-color: #b59f5b;
-    background-image: url(/svg/search.svg);
+    background-image: url(../svg/search.svg);
     background-size: 25px 25px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -357,7 +441,7 @@ li {
 
 .email {
     height: 50px;
-    width: 280px;
+    width: 100%;
     background-color: #f4f7f6;
     outline: none;
     border: none;
@@ -368,7 +452,7 @@ li {
 
 .button {
     height: 50px;
-    width: 280px;
+    width: 100%;
     background-color: #b59f5b;
     outline: none;
     border: none;
@@ -419,28 +503,27 @@ li {
 
 .tems {
     border-bottom: 1px solid #eeeeee;
-    position: relative;
     line-height: 47px;
 }
 
 .number_tems {
     font-size: 12px;
-    line-height: 36px;
     color: #b59f5b;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
-    position: absolute;
+    vertical-align: top;
 }
 
 .footer_container {
     display: flex;
     justify-content: center;
-    gap: 75px;
+    gap: 55px;
+    margin: auto;
+    width: 1200px;
 }
 
 .create {
-    height: 455px;
-    width: 320px;
+    width: calc(100% / 3);
     display: flex;
     flex-direction: column;
     padding-left: 30px;
@@ -480,7 +563,7 @@ li {
 .create_cost {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
@@ -512,9 +595,32 @@ li {
     gap: 40px;
 }
 
+#dribbble {
+    width: 30px;
+    height: 30px;
+    background-image: url(../svg/001-dribbble.svg);
+    background-size: 30px 30px;
+    display: block;
+}
+
+#pinterest {
+    width: 30px;
+    height: 30px;
+    background-image: url(../svg/002-pinterest.svg);
+    background-size: 30px 30px;
+    display: block;
+}
+
+#tumblr {    
+    width: 30px;
+    height: 30px;
+    background-image: url(../svg/003-tumblr.svg);
+    background-size: 30px 30px;
+    display: block;
+}
+
 .end {
     font-size: 12px;
-    line-height: 40px;
     color: #999999;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
