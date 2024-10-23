@@ -9,26 +9,28 @@
 <body>
     <div class="fitback">
         <div class="case">
-            <button class="X"></button>
-            <div class="main_title_container text">
-                <h4 class="main_title">ВАш фитбек</h4>
+            <div class="main_fitback">
+                <button class="X"></button>
+                <div class="main_title_container text">
+                    <h4 class="main_title">ВАш фитбек</h4>
+                </div>
+                <p class="text_in_fitback">Как часто вы заходите на сайт?</p>
+                <input type="text" class="question_fitback" placeholder="Почти каждый день">
+                <p class="text_in_fitback">Вы подписаны на e-mail рассылку?</p>
+                <form action="" class="form_radio">
+                    <label for="first">
+                        <input type="radio" id="first" name="radio">
+                        <div class="radio"><span class="chose">Да</span></div>
+                    </label>
+                    <label for="second">
+                        <input type="radio" id="second" name="radio">
+                        <div class="radio"><span class="chose">Нет</span></div>
+                    </label>
+                </form>
+                <p class="text_in_fitback">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+                <textarea class="text_fitback" placeholder="Может, больше рецептов?"></textarea>
+                <button class="button_fitback" type="submit">отправить</button>
             </div>
-            <p class="text_in_fitback">Как часто вы заходите на сайт?</p>
-            <input type="text" class="question_fitback" placeholder="Почти каждый день">
-            <p class="text_in_fitback">Вы подписаны на e-mail рассылку?</p>
-            <form action="" class="form_radio">
-                <label for="first">
-                    <input type="radio" id="first" name="radio">
-                    <div class="radio"><span>Да</span></div>
-                </label>
-                <label for="second">
-                    <input type="radio" id="second" name="radio">
-                    <div class="radio"><span>Нет</span></div>
-                </label>
-            </form>
-            <p class="text_in_fitback">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-            <textarea class="text_fitback"></textarea>
-            <button class="button_fitback" type="submit">отправить</button>
         </div>
     </div>
     <header class="header">
@@ -57,25 +59,36 @@
         <div class="trend_container">
             <div class="trend trend_one">
                 <div class="trend_tegs_text">
-                    <span class="tegs text">Lifestyle INTERIOR</span>
+                    <ul class="tegs text">
+                        <li><a href="#" class="tegs text">lifestyle</a></li>
+                        <li><a href="#" class="tegs text">interior</a></li>
+                    </ul>
                     <h6><a href="#" class="trend_text text">Сейчас в тренде: сад на подоконнике</a></h6>
                 </div>
             </div>
             <div class="trend trend_two">
                 <div class="trend_tegs_text">
-                    <span class="tegs text">Food</span>
+                    <ul class="tegs text">
+                        <li><a href="#" class="tegs text">food</a></li>
+                    </ul>
                     <h6><a href="#" class="trend_text text">сыры на красивых картинках из интернета: какие они на вкус?</a></h6>
                 </div>
             </div>
             <div class="trend trend_three">
                 <div class="trend_tegs_text">
-                    <span class="tegs text">Lifestyle tRAVEL</span>
+                    <ul class="tegs text">
+                        <li><a href="#" class="tegs text">lifestyle</a></li>
+                        <li><a href="#" class="tegs text">travel</a></li>
+                    </ul>
                     <h6><a href="#" class="trend_text text">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a></h6>
                 </div>
             </div>
             <div class="trend trend_four">
                 <div class="trend_tegs_text">
-                    <span class="tegs text">food health</span>
+                    <ul class="tegs text">
+                        <li><a href="#" class="tegs text">food</a></li>
+                        <li><a href="#" class="tegs text">Health</a></li>
+                    </ul>
                     <h6><a href="#" class="trend_text text">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a></h6>
                 </div>
             </div>
@@ -85,12 +98,10 @@
                 <div class="main_news">
                     <img src="images/last-post1.jpg" alt="">
                     <div>
-                        <span>
-                            <ul class="tegs_news">
-                                <li><a href="#" class="tegs text">Travel</a></li>
-                                <li><a href="#" class="tegs text">Health</a></li>
-                            </ul>
-                        </span>
+                        <ul class="tegs_news">
+                            <li><a href="#" class="tegs text">Travel</a></li>
+                            <li><a href="#" class="tegs text">Health</a></li>
+                        </ul>
                         <h3><a href="#" class="title_news text">10 мест, ради которых стоит проснуться на рассвете</a></h3>
                         <span class="date_news">10 июня 2019 <span class="autor_news">Неизвестный автор</span></span>
                         <p class="maintext_news">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
@@ -99,12 +110,10 @@
                 <div class="main_news">
                     <img src="images/last-post2.jpg" alt="">
                     <div>
-                        <span>
-                            <ul class="tegs_news">
-                                <li><a href="#" class="tegs text">Health</a></li>
-                                <li><a href="#" class="tegs text">Lifestyle</a></li>
-                            </ul>
-                        </span>
+                        <ul class="tegs_news">
+                            <li><a href="#" class="tegs text">Health</a></li>
+                            <li><a href="#" class="tegs text">Lifestyle</a></li>
+                        </ul>
                         <h3><a href="#" class="title_news text">ЙОга для начинающих в домашних условиях</a></h3>
                         <span class="date_news">10 июня 2019 <span class="autor_news">Неизвестный автор</span></span>
                         <p class="maintext_news">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
@@ -113,11 +122,9 @@
                 <div class="main_news">
                     <img src="images/last-post3.jpg" alt="">
                     <div>
-                        <span>
-                            <ul class="tegs_news">
-                                <li><a href="#" class="tegs text">music</a></li>
-                            </ul>
-                        </span>
+                        <ul class="tegs_news">
+                            <li><a href="#" class="tegs text">music</a></li>
+                        </ul>
                         <h3><a href="#" class="title_news text">Лучшие музыкальные фестивали этого лета</a></h3>
                         <span class="date_news">10 июня 2019 <span class="autor_news">Неизвестный автор</span></span>
                         <p class="maintext_news">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
@@ -127,12 +134,10 @@
                 <div class="main_news">
                     <img src="images/last-post4.jpg" alt="">
                     <div>
-                        <span>
-                            <ul class="tegs_news">
-                                <li><a href="#" class="tegs text">lifestyle</a></li>
-                                <li><a href="#" class="tegs text">food</a></li>
-                            </ul>
-                        </span>
+                        <ul class="tegs_news">
+                            <li><a href="#" class="tegs text">lifestyle</a></li>
+                            <li><a href="#" class="tegs text">food</a></li>
+                        </ul>
                         <h3><a href="#" class="title_news text">Наукоёмкий подход к кулинарии</a></h3>
                         <span class="date_news">10 июня 2019 <span class="autor_news">Неизвестный автор</span></span>
                         <p class="maintext_news">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
@@ -141,13 +146,11 @@
                 <div class="main_news">
                     <img src="images/last-post5.jpg" alt="">
                     <div>
-                        <span>
-                            <ul class="tegs_news">
-                                <li><a href="#" class="tegs text">lifestyle</a></li>
-                                <li><a href="#" class="tegs text">interior</a></li>
-                                <li><a href="#" class="tegs text">art</a></li>
-                            </ul>
-                        </span>
+                        <ul class="tegs_news">
+                            <li><a href="#" class="tegs text">lifestyle</a></li>
+                            <li><a href="#" class="tegs text">interior</a></li>
+                            <li><a href="#" class="tegs text">art</a></li>
+                        </ul>
                         <h3><a href="#" class="title_news text">делаем модные принты на подушках для интерьера</a></h3>
                         <span class="date_news">10 июня 2019 <span class="autor_news">Неизвестный автор</span></span>
                         <p class="maintext_news">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
@@ -194,12 +197,12 @@
                             <h6 class="title_mini"><a href="#" class="title_mini text">лучшие прически для распущенных волос</a></h6>
                         </div>
                     </div>
-                    <form action="#">
-                        <label for="" class="search_container">
-                            <input type="search" placeholder="  Найти..." class="search">
-                            <span></span>
-                            <button class="search_icon" type="submit"></button>
+                    <form action="#" class="search_container">
+                        <label for="">
+                            <input type="search" placeholder="Найти..." class="search">
+                            <span class="screenrider">Строка поиска</span>
                         </label>
+                        <button class="search_icon" type="submit"></button>
                     </form>
                 </div>
                 <div class="main_title_container text">
@@ -207,10 +210,10 @@
                 </div>
                 <form action="#">
                     <label for="">
-                        <input type="email" class="email" placeholder="  Ваш email-адрес">
-                        <span></span>
-                        <button type="submit" class="button">Подписаться</button>
+                        <input type="email" class="email" placeholder="Ваш email-адрес">
+                        <span class="screenrider">Строка ввода email почты</span>
                     </label>
+                    <button type="submit" class="button">Подписаться</button>
                 </form>    
                 <div class="main_title_container text">
                     <h6 class="main_title">теги</h6>
@@ -254,7 +257,10 @@
                     <h3 class="title_news text">Подушки на диван</h3>
                     <span class="maintext_news">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="link_shop">здесь</a>.</span>
                     <div class="create_cost">
-                         <span class="cost text">800 ₽<span class="discount text">1000 ₽</span></span>
+                        <div class="cost_container">
+                            <span class="discount text">1000 ₽</span>
+                            <span class="cost text">800 ₽</span>
+                        </div>
                          <button class="button_shop text">в магазин</button>
                     </div>
                 </div>
@@ -267,7 +273,10 @@
                     <h3 class="title_news text">Кукла «Зайчик»</h3>
                     <span class="maintext_news">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена<a href="#" class="link_shop"> весенняя серия постов</a> в блоге и несколько подкастов.</span>
                     <div class="create_cost">
-                        <span class="cost text">800 ₽<span class="discount text"></span></span>
+                        <div class="cost_container">
+                            <span class="discount text"></span>
+                            <span class="cost text">800 ₽</span>
+                        </div>
                         <button class="button_shop text">в магазин</button>
                     </div>
                 </div>
@@ -280,7 +289,10 @@
                     <h3 class="title_news text">Шестиугольная рамка</h3>
                     <span class="maintext_news">Необычная рамка для украшения дома из видео<a href="#" class="link_shop"> «Как сделать рамку из подручных средств за 30 минут» </a></span>
                     <div class="create_cost">
-                        <span class="cost text">400 ₽<span class="discount text">500 ₽</span></span>
+                        <div class="cost_container">
+                            <span class="discount text">500 ₽</span>
+                            <span class="cost text">400 ₽</span>
+                        </div>
                         <button class="button_shop text">в магазин</button>
                     </div>
                 </div>
@@ -291,8 +303,11 @@
         <div class="footer">
             <ul class="svg_cont">
                 <li><a href="#" id="dribbble"></a></li>
+                <span class="screenrider">Иконка соц-сети dribbble</span>
                 <li><a href="#" id="pinterest"></a></li>
+                <span class="screenrider">Иконка соц-сети pinterest</span>
                 <li><a href="#" id="tumblr"></a></li>
+                <span class="screenrider">Иконка соц-сети tumblr</span>
             </ul>
         </div>
         <div class="end">Copyright © 2009–2019 City Blog LLC.</div>
