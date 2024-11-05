@@ -10,12 +10,20 @@
     <div class="fitback">
         <div class="case">
             <div class="main_fitback">
-                <button class="X"></button>
+                <button class="CloseButton_fitback"><span class="screenrider">Кнопка закрытия фитбека</span></button>
                 <div class="main_title_container text">
                     <h4 class="main_title">ВАш фитбек</h4>
                 </div>
-                <p class="text_in_fitback">Как часто вы заходите на сайт?</p>
-                <input type="text" class="question_fitback" placeholder="Почти каждый день">
+                <form action="">
+                    <label for="">
+                            <p class="text_in_fitback">Как часто вы заходите на сайт?</p>
+                        <select class="question_fitback">
+                            <option value="every">Почти каждый день</option>
+                            <option value="rare">Раз в месяц</option>
+                            <option value="never">Впервый раз зашел</option>
+                        </select>
+                    </label>
+                </form>
                 <p class="text_in_fitback">Вы подписаны на e-mail рассылку?</p>
                 <form action="" class="form_radio">
                     <label for="first">
@@ -27,21 +35,28 @@
                         <div class="radio"><span class="chose">Нет</span></div>
                     </label>
                 </form>
-                <p class="text_in_fitback">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-                <textarea class="text_fitback" placeholder="Может, больше рецептов?"></textarea>
-                <button class="button_fitback" type="submit">отправить</button>
+                <form action="">
+                    <label for="">
+                        <p class="text_in_fitback">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+                        <textarea class="text_fitback" placeholder="Может, больше рецептов?"></textarea>
+                    </label>
+                    <button class="button_fitback" type="submit">отправить</button>
+                </form>
             </div>
         </div>
     </div>
     <header class="header">
         <div class="container">
-            <a href="#">
+            <a href="#" class="noemi_case">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 3070 696" class="noemi_logo">
                     <path fill="#B59F5B" d="M485.331 135.438V696h-3.762L105.343 353.643l3.762 319.784H0V112.865h3.7623L379.988 458.984l-3.762-323.546h109.105Z"/>
                     <path fill="#fff" stroke="#E8E8E8" d="m861.808 165.967.009-.005.008-.005c41.291-26.275 86.341-37.543 138.935-37.543 52.58 0 93.88 11.261 138.94 37.548 41.32 26.295 75.13 60.101 101.42 101.42 26.28 41.293 37.55 86.343 37.55 135.169 0 48.823-11.27 93.882-37.56 138.948-26.28 45.059-60.08 75.103-101.42 101.409-41.29 26.275-86.34 37.543-138.93 37.543-48.821 0-93.878-11.263-138.943-37.548-41.335-26.305-75.126-56.348-101.41-101.404-26.287-45.063-37.551-86.355-37.554-138.927 3.76-45.089 15.032-93.909 37.553-135.204 26.304-41.331 56.348-75.12 101.402-101.401Zm-4.448 327.124c15.076 26.384 33.944 49.036 60.382 64.143 26.411 15.092 52.832 22.639 86.778 22.639 30.19 0 56.61-7.55 83.02-22.639 26.44-15.107 45.31-37.759 60.38-64.143 15.1-26.414 22.64-56.598 22.64-86.777 0-33.948-7.55-60.368-22.64-86.778-15.07-26.383-33.94-49.036-60.38-64.143-26.41-15.089-52.83-22.639-83.02-22.639-30.102 0-64.128 3.754-86.85 22.689l-.032.027c-22.552 18.793-45.184 37.652-60.278 64.066-15.095 26.415-22.639 56.598-22.639 86.778 0 30.179 7.544 60.363 22.639 86.777ZM1617.77 572.349h270.38v100.578h-371.46V135.938h363.94v100.578h-263.36v117.627h233.26v100.579h-233.26v117.627h.5ZM1834.67.5l-107.99 96.8162h-62.87L1723.39.5h111.28ZM2584.26 417.31l-176.42 247.736-168.89-232.691-.91-1.247v241.819h-100.58V114.453l269.97 386.201.41.574.41-.566 281.26-386.261v558.526h-104.34V416.036l-.91 1.274ZM3069.5 135.938v536.989h-104.34V135.938h104.34Z"/>
                 </svg>  
             </a>            
-            <img src="svg/menu-symbol-of-three-parallel-lines-svgrepo-com.svg" alt="" class="menu">
+            <button class="button_burger">
+                <img src="svg/menu-symbol-of-three-parallel-lines-svgrepo-com.svg" alt="" class="menu">
+                <span class="screenrider">кнопка-бургер меню</span>
+            </button>
             <ul class="navigation">
                 <li><a href="#" class="list_item_nav">Главная</a></li>
                 <li><a href="#" class="list_item_nav">посты</a></li>
@@ -199,11 +214,11 @@
                         </div>
                     </div>
                     <form action="#" class="search_container">
-                        <label for="">
+                        <label for="" class="search_container">
                             <input type="search" placeholder="Найти..." class="search">
                             <span class="screenrider">Строка поиска</span>
                         </label>
-                        <button class="search_icon" type="submit"></button>
+                        <button class="search_icon" type="submit"><span class="screenrider">кнопка отравки строки поиска</span></button>
                     </form>
                 </div>
                 <div class="main_title_container text">
@@ -250,8 +265,11 @@
             <h5 class="main_title">наши изделия</h5>
         </div>
         <div class="footer_container">
+            
             <div class="create">
-                <picture>
+                <picture class="image_shop">
+                    <source media="(min-width: 768px) and (max-width: 1200px)" srcset="images/shop-item-tablet1.jpg">
+                    <source media="(max-width: 768px)" srcset="images/shop-item-mobile1.jpg">
                     <img src="images/shop-item-desk1.jpg" alt="">
                 </picture>
                 <div class="create_text">
@@ -267,7 +285,9 @@
                 </div>
             </div>
             <div class="create">
-                <picture>
+                <picture class="image_shop">
+                    <source media="(min-width: 768px) and (max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
+                    <source media="(max-width: 768px)" srcset="images/shop-item-mobile2.jpg">
                     <img src="images/shop-item-desk2.jpg" alt="">
                 </picture>
                 <div class="create_text">
@@ -283,7 +303,9 @@
                 </div>
             </div>
             <div class="create">
-                <picture>
+                <picture class="image_shop">
+                    <source media="(min-width: 768px) and (max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
+                    <source media="(max-width: 768px)" srcset="images/shop-item-mobile3.jpg">
                     <img src="images/shop-item-desk3.jpg" alt="">
                 </picture>
                 <div class="create_text">
@@ -303,12 +325,9 @@
     <footer>
         <div class="footer">
             <ul class="svg_cont">
-                <li><a href="#" id="dribbble"></a></li>
-                <span class="screenrider">Иконка соц-сети dribbble</span>
-                <li><a href="#" id="pinterest"></a></li>
-                <span class="screenrider">Иконка соц-сети pinterest</span>
-                <li><a href="#" id="tumblr"></a></li>
-                <span class="screenrider">Иконка соц-сети tumblr</span>
+                <li><a href="#" id="dribbble"><span class="screenrider">Иконка соц-сети dribbble</span></a></li>
+                <li><a href="#" id="pinterest"><span class="screenrider">Иконка соц-сети pinterest</span></a></li>
+                <li><a href="#" id="tumblr"><span class="screenrider">Иконка соц-сети tumblr</span></a></li>
             </ul>
         </div>
         <div class="end">Copyright © 2009–2019 City Blog LLC.</div>
