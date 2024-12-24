@@ -147,10 +147,10 @@ body {
 
 @keyframes slides {
     from {
-        background-image: url(../images/banner-bg.jpg);
+        
     }
     50% {
-        opacity: 0;
+        
     }
     to {
         background-image: url(../images/trend1.jpg);
@@ -171,8 +171,9 @@ body {
 
 .header::after {
     content: "";
+    background-image: url(../images/banner-bg.jpg);
     animation-name: slides;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     background-size: cover;
